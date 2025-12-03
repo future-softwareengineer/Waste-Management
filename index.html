@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barangay Waste Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Barangay Waste Collection Management System</h1>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Add Waste Record</h2>
+            <form id="wasteForm">
+                <input type="text" id="householdName" placeholder="Household Name" required>
+                <input type="text" id="address" placeholder="Address" required>
+                <input type="text" id="wasteType" placeholder="Waste Type" required>
+                <input type="number" id="weight" placeholder="Weight (kg)" required>
+                <input type="date" id="date" required>
+                <button type="submit">Add Record</button>
+            </form>
+            <div class="interactive-buttons">
+                <input type="text" id="searchInput" placeholder="Search Household">
+                <button id="searchBtn">Search</button>
+                <button id="undoBtn">Undo Last Record</button>
+            </div>
+        </section>
+
+        <section class="table-section">
+            <h2>Waste Records</h2>
+            <table id="recordsTable">
+                <thead>
+                    <tr>
+                        <th>Household</th>
+                        <th>Address</th>
+                        <th>Waste Type</th>
+                        <th>Weight (kg)</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Records will appear here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="top5-section">
+            <h2>Top 5 Waste Contributors</h2>
+            <ol id="top5List">
+                <!-- Top 5 will appear here -->
+            </ol>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
